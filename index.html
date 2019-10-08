@@ -1,0 +1,25 @@
+<html>
+ <head>
+  <title>My Cool Photo Booth</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+ <body>
+   <main id="photo-booth">
+  <!-- Camera sensor -->
+      <canvas id="canvas"></canvas>
+      <!-- Camera view -->
+      <video id="camera" autoplay playsinline></video>
+      <!-- Camera output -->
+      <img src="//:0" alt="" id="output">
+      <!-- Camera trigger -->
+      <button id="take-photo">Take a picture</button>
+
+        <button id="grayscale" onclick="addClass(0)">Grayscale</button>
+        <button id="sepia" onclick="addClass(1)">Sepia</button>
+        <button id="blur" onclick="addClass(2)">Blur</button>
+
+    </main>
+  <script src="js/functions.js"></script>
+
+ </body>
+</html>
