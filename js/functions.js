@@ -39,7 +39,7 @@ cameraTrigger.onclick = function() {
     cameraOutput.appendChild(link);
 
 };
-function addClass(index){
+function addFilter(index){
   //add class to canvas corresponding to the filter index
   cameraOutput.classList.add(filters[index]);
   link.click()
