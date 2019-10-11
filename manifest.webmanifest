@@ -1,0 +1,17 @@
+{
+	"name" : "Photo Booth",
+	"short_name" : "Photo Booth",
+	"description" : "Offline PWA that allows you to take pictures and apply filters.",
+	"start_url" : "/",
+	"scope" : "*",
+	"display" : "standalone",
+	"orientation" : "any",
+	"lang" : "English",
+      "icons": [
+ 	 {
+    	"src": "camera.png",
+    	"sizes": "512x512",
+    	"type": "image/png"
+  	}
+	]
+}
