@@ -36,8 +36,7 @@ cameraTrigger.onclick = function() {
 };
 function addFilter(index){
   //add class to canvas corresponding to the filter index
-  cameraOutput.filter=filters[index]+"(0.8)";
- 
+ cameraOutput.classList.add(filters[index]); 
 }
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
