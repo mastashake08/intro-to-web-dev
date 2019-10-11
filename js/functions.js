@@ -32,17 +32,11 @@ cameraTrigger.onclick = function() {
     cameraOutput.src = cameraSensor.toDataURL("image/png");
     cameraOutput.classList.add("taken");
 
-    link.setAttribute('href', cameraOutput.src);
-    link.setAttribute('download', 'output.png');
-    link.setAttribute('target', '_blank');
-    link.style.display = 'none';
-    cameraOutput.appendChild(link);
 
 };
 function addFilter(index){
   //add class to canvas corresponding to the filter index
-  cameraOutput.classList.add(filters[index]);
-  link.click()
+ cameraOutput.classList.add(filters[index]); 
 }
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
